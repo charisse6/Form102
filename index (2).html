@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Band Position Application</title>
+</head>
+<body>
+
+    <h1>Gallora Changes - Band Position Application</h1>
+        <h2>Band Photo</h2>
+        <img src="https://i.ibb.co/ymwN5pkJ/d5eddac45aafe8261fa3fe67e6e2a223.jpg" alt="d5eddac45aafe8261fa3fe67e6e2a223" height="170" width="280">
+        <h3>Audition Video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OUgLSpRHh9I?si=UlLSr4pr4_LfW_3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" pattern="[A-Za-z ]+" title="Only letters and spaces allowed" required><br><br>
+
+        <label for="contact">Contact:</label><br>
+        <input type="text" id="contact" name="contact" placeholder="e.g., 09XXXXXXXXX" pattern="[0-9]{11}" title="11 digit mobile number" required><br><br>
+
+        <label for="about">About Yourself:</label><br>
+        <textarea id="about" name="about" placeholder="Tell us about yourself" maxlength="100" rows="4" required></textarea><br><br>
+
+        <label for="position">Desired Position:</label><br>
+        <select id="position" name="position" required>
+            <option value="">Select Position</option>
+            <option value="vocalist">Vocalist</option>
+            <option value="guitarist">Guitarist</option>
+            <option value="bassist">Bassist</option>
+            <option value="drummer">Drummer</option>
+            <option value="keyboardist">Keyboardist</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p>Contact us on Facebook: Gallora</p>
+        <p>Read only</p>
+    </footer>
+
+</body>
+</html>
